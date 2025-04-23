@@ -1,0 +1,255 @@
+% XeLaTeX compiler to deal with Vietnamese fonts
+\documentclass[11pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{fontspec}  % Use fontspec for XeLaTeX or LuaLaTeX
+\usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
+
+% Ensure you have biber as the backend
+\addbibresource{cv.bib}
+
+% Custom sorting to use the sortorder field in descending order
+\DeclareSortingScheme{sortorder}{
+  \sort[direction=descending]{\field{sortorder}}
+}
+
+% Apply the custom sorting scheme
+\ExecuteBibliographyOptions{sorting=sortorder}
+
+% Define a new environment for your publication lists
+\newenvironment{publist}{\begin{enumerate}}{\end{enumerate}}
+
+\begin{document}
+
+\begin{center}
+  \textbf{Jay-Terrence Lennon} \\
+  Department of Biology, Indiana University, Bloomington, Indiana 47405 \\
+  Phone: (812) 856-0962 \\
+  Email: \href{mailto:lennonj@indiana.edu}{lennonj@indiana.edu} \\
+  Lab website: \href{https://lennonlab.github.io}{https://lennonlab.github.io} \\
+  Lab wiki: \href{http://lennon.bio.indiana.edu}{http://lennon.bio.indiana.edu} \\
+  Google Scholar: \href{https://goo.gl/qx4hHR}{https://goo.gl/qx4hHR}
+\end{center}
+
+\vspace{0.2in}
+
+\section*{Education}
+\begin{itemize}[left=0pt,label={}]
+  \item \begin{tabular}{@{}p{2cm} p{13cm}}
+    1995 & BS, Environmental Forest Biology, SUNY-ESF at Syracuse \\
+    1999 & MA, Ecology \& Evolutionary Biology, University of Kansas \\
+    2004 & Ph.D., Ecology \& Evolutionary Biology, Dartmouth College \\
+  \end{tabular}
+\end{itemize}
+
+\section*{Professional Experience}
+\begin{itemize}[left=0pt,label={}]
+  \item \begin{tabular}{@{}p{2cm} p{13cm}}
+    2023 & Visiting Professor, Goethe University, Frankfurt Germany \\
+    2023 & Short-term Visiting Professor, ETH Zürich, Centre for Origin and Prevalence of Life \\
+    2020-2024 & Faculty, Complex Networks and Systems, Indiana University \\
+    2018-2022 & Faculty, Microbial Diversity Course, Marine Biological Laboratory (MBL), Woods Hole \\
+    2016- & Professor, Indiana University, Department of Biology, Core Faculty in the Evolution, Ecology \& Behavior (EEB) Section, Affiliated Faculty in Microbiology Section \\
+    2016-2017 & Whitman Center Associate, Marine Biological Laboratory (MBL), Woods Hole \\
+    2016-2017 & Visiting Professor, Montana State University, Department of Microbiology and Immunology \\
+    2012-2016 & Associate Professor, Indiana University, Department of Biology, Core Faculty in the Evolution, Ecology \& Behavior Section, Affiliated Faculty in Microbiology Section \\
+    2012-2015 & Adjunct Professor, W.K. Kellogg Biological Station, Michigan State University \\
+    2012 & Associate Professor, W.K. Kellogg Biological Station and the Department of Microbiology \& Molecular Genetics, Michigan State University \\
+    2011- & Ad hoc Graduate Faculty, Michigan Technological University \\
+    2008-2012 & Adjunct Professor, Plant Biology Department, Michigan State University \\
+    2006-2012 & Assistant Professor, W.K. Kellogg Biological Station and the Department of Microbiology \& Molecular Genetics, Michigan State University \\
+    2004-2006 & Postdoctoral Research Associate, Brown University, Department of Ecology \& Evolutionary Biology \\
+  \end{tabular}
+\end{itemize}
+
+\section*{Honors and Awards}
+\begin{itemize}[left=0pt,label={}]
+  \item \begin{tabular}{@{}p{2cm} p{13cm}}
+    2023 & Humboldt Prize, Alexander von Humboldt Foundation \\
+    2022-2025 & Governing Board, Ecological Society of America (ESA) \\
+    2022-2027 & Chair, Climate Change Task Force, American Academy of Microbiology (AAM) \\
+    2021 & Fellow, Ecological Society of America (ESA) \\
+    2020-2022 & Distinguished Lecturer, American Society for Microbiology (ASMDL) \\
+    2020-2026 & Governor, American Academy of Microbiology (AAM) \\
+    2019 & Fellow, American Academy of Microbiology (AAM) \\
+    2019-2023 & Highly Cited Researcher, Clarivate, Cross-Field \\
+    2018 & Fellow, American Association for the Advancement of Science (AAAS) \\
+    2012 & Kavli Fellow, National Academy of Sciences \\
+    2004 & USDA National Research Initiative (NRI) Postdoctoral Fellowship Award \\
+    2004 & Hannah T. Croasdale Graduate Scholar Award. College-wide award to Ph.D. student that best exemplifies qualities of academic scholarship, Dartmouth College \\
+    2004 & Milton L. Shifman Endowed Scholarship, Marine Biological Laboratory \\
+    2004 & Albert Cass Fellowship, The Rockefeller University \\
+    2004 & Nathan Jenks Biology Award, Dartmouth College \\
+    2003 & Best student presentation, North American Lake Management Society, National Meeting, Mashantucket, Connecticut \\
+    2002 & NSF Doctoral Dissertation Improvement Grant (DDIG) \\
+    1999-2004 & Dartmouth Fellowship, Dartmouth College, Hanover, New Hampshire, USA \\
+    1995 & Undergraduate honors: Magna Cum Laude; President’s List; Alpha Sigma Xi, SUNY-ESF, Syracuse, New York, USA \\
+    1992 & Outstanding history student, SUNY Oswego, Oswego, New York, USA \\
+  \end{tabular}
+\end{itemize}
+
+\section*{Publications}
+
+\subsection*{Preprints, In Review, and In Press}
+\begin{publist}
+  \item \fullcite{Nevermann_etal_2024}
+  \item \fullcite{Peixoto_etal_2024}
+  \item \fullcite{Magalie_etal_2024}
+  \item \fullcite{Zang2024_etal_2024}
+  \item \fullcite{McGill_etal_2024}
+  \item \fullcite{Waldrop_etal_2024}
+  \item \fullcite{Wu_etal_2024}
+\end{publist}
+
+\subsection*{Commentaries, essays, and reports}
+\begin{publist}
+  \item \fullcite{Lennon_etal_2023a}
+  \item \fullcite{Lennon2023b_etal}
+  \item \fullcite{Lennon_2020}
+  \item \fullcite{Lennon_Locey_2018}
+  \item \fullcite{Lau_etal_2017}
+  \item \fullcite{MogerReischer_Lennon_2017}
+  \item \fullcite{Wisnoski_Lennon_2016}
+\end{publist}
+
+\subsection*{Patents}
+\begin{publist}
+  \item \fullcite{Lennon_etal_2023c}
+\end{publist}
+
+\subsection*{Peer-reviewed publications}
+\begin{publist}
+  \item \fullcite{Lennon_etal_2024}
+  \item \fullcite{Hu_etal_2024}
+  \item \fullcite{MogerReischer_etal_2023}
+  \item \fullcite{Fishman_Lennon_2023}
+  \item \fullcite{Zhou_etal_2023}
+  \item \fullcite{Schwartz_etal_2023a}
+  \item \fullcite{Schwartz_etal_2023b}
+  \item \fullcite{Lennon_etal_2023d}
+  \item \fullcite{Magalie_etal_2023}
+  \item \fullcite{McMullen_Lennon_2023}
+  \item \fullcite{Irvine_etal_2023}
+  \item \fullcite{Schwartz_etal_2022}
+  \item \fullcite{Bolin_etal_2022}
+  \item \fullcite{Wisnoski_Lennon_2022}
+  \item \fullcite{Webster_etal_2022}
+  \item \fullcite{Hu_etal_2022a}
+  \item \fullcite{Hu_etal_2022b}
+  \item \fullcite{Shoemaker_etal_2022a}
+  \item \fullcite{Krause_etal_2022}
+  \item \fullcite{Shoemaker_etal_2022b}
+  \item \fullcite{Shoemaker_etal_2021a}
+  \item \fullcite{Wisnoski_Lennon_2021}
+  \item \fullcite{Shoemaker_etal_2021b}
+  \item \fullcite{Lennon_etal_2021}
+  \item \fullcite{Lamit_etal_2021}
+  \item \fullcite{Kuo_etal_2021}
+  \item \fullcite{Mobilian_etal_2020}
+  \item \fullcite{Wisnoski_etal_2020a}
+  \item \fullcite{Muscarella_etal_2020}
+  \item \fullcite{MogerReischer_etal_2020}
+  \item \fullcite{Locey_etal_2020}
+  \item \fullcite{Lennon_Locey_2020}
+  \item \fullcite{Wisnoski_Lennon_2020}
+  \item \fullcite{Yin_etal_2020}
+  \item \fullcite{Mueller_etal_2019}
+  \item \fullcite{MogerReischer_Lennon_2019}
+  \item \fullcite{Wisnoski_etal_2019}
+  \item \fullcite{Muscarella_etal_2019}
+  \item \fullcite{Locey_Lennon_2019}
+  \item \fullcite{Salazar_etal_2019}
+  \item \fullcite{Larsen_etal_2019}
+  \item \fullcite{Sprunger_etal_2019}
+  \item \fullcite{Schimmelmann_etal_2018}
+  \item \fullcite{Lennon_etal_2018}
+  \item \fullcite{Shade_etal_2018}
+  \item \fullcite{Hall_etal_2018}
+  \item \fullcite{Peralta_etal_2018}
+  \item \fullcite{Shoemaker_etal_2018}
+  \item \fullcite{Long_etal_2018}
+  \item \fullcite{Shoemaker_etal_2017}
+  \item \fullcite{Lennon_Locey_2017}
+  \item \fullcite{Locey_etal_2017}
+  \item \fullcite{Webster_etal_2017}
+  \item \fullcite{Kuo_etal_2017}
+  \item \fullcite{Nguyen_etal_2017}
+  \item \fullcite{Lamit_etal_2017}
+  \item \fullcite{LaSarre_etal_2017}
+  \item \fullcite{Skelton_etal_2017}
+  \item \fullcite{Locey_Lennon_2017}
+  \item \fullcite{Lennon_Locey_2016}
+  \item \fullcite{Lennon_etal_2016}
+  \item \fullcite{Locey_Lennon_2016a}
+  \item \fullcite{Lennon_Lemkuhl_2016}
+  \item \fullcite{Muscarella_etal_2016}
+  \item \fullcite{KinsmanCostello_etal_2016}
+  \item \fullcite{Aanderud_etal_2016}
+  \item \fullcite{Wigington_etal_2016}
+  \item \fullcite{Lennon_Denef_2016}
+  \item \fullcite{Hall_etal_2016}
+  \item \fullcite{Martiny_etal_2015}
+  \item \fullcite{Bier_etal_2015}
+  \item \fullcite{Shoemaker_etal_2015}
+  \item \fullcite{Treseder_Lennon_2015}
+  \item \fullcite{Solomon_etal_2015}
+  \item \fullcite{Aanderud_etal_2015}
+  \item \fullcite{Rocca_etal_2015}
+  \item \fullcite{Weitz_etal_2015}
+  \item \fullcite{Jones_Lennon_2015}
+  \item \fullcite{Muscarella_etal_2014}
+  \item \fullcite{Peralta_etal_2014}
+  \item \fullcite{terHorst_etal_2014}
+  \item \fullcite{Krause_etal_2014}
+  \item \fullcite{Dzialowski_etal_2014}
+  \item \fullcite{Bertilsson_etal_2013}
+  \item \fullcite{Lennon_etal_2013}
+  \item \fullcite{Ponsero_etal_2013}
+  \item \fullcite{Lauber_etal_2013}
+  \item \fullcite{Shade_etal_2012}
+  \item \fullcite{Aanderud_etal_2013}
+  \item \fullcite{Lau_Lennon_2012}
+  \item \fullcite{Lennon_etal_2012}
+  \item \fullcite{Burgin_etal_2012}
+  \item \fullcite{OBrien_etal_2012}
+  \item \fullcite{Treseder_etal_2012}
+  \item \fullcite{Lau_Lennon_2011}
+  \item \fullcite{Aanderud_etal_2011a}
+  \item \fullcite{Lennon_Jones_2011}
+  \item \fullcite{Lennon_2011}
+  \item \fullcite{Fierer_Lennon_2011}
+  \item \fullcite{Aanderud_etal_2011b}
+  \item \fullcite{Jones_Lennon_2010}
+  \item \fullcite{Hall_etal_2010}
+  \item \fullcite{Thum_Lennon_2010}
+  \item \fullcite{Jones_Lennon_2009}
+  \item \fullcite{Lennon_Martiny_2008}
+  \item \fullcite{Lennon_Cottingham_2008}
+  \item \fullcite{Lennon_etal_2007}
+  \item \fullcite{Lennon_2007}
+  \item \fullcite{Reyns_etal_2007}
+  \item \fullcite{Dzialowski_etal_2007}
+  \item \fullcite{Lennon_etal_2006}
+  \item \fullcite{Thum_Lennon_2006}
+  \item \fullcite{Cottingham_etal_2005b}
+  \item \fullcite{Cottingham_etal_2005a}
+  \item \fullcite{Lennon_Pfaff_2005}
+  \item \fullcite{Thum_etal_2005}
+  \item \fullcite{Lennon_2004}
+  \item \fullcite{Lennon_etal_2003}
+  \item \fullcite{Dzialowski_etal_2003}
+  \item \fullcite{Cottingham_etal_2001}
+  \item \fullcite{Lennon_2001}
+\end{publist}
+
+\subsection*{Theses}
+\begin{publist}
+  \item \fullcite{Lennon_2004}
+  \item \fullcite{Lennon_1999}
+\end{publist}
+
+\nocite{*}
+
+\end{document}
