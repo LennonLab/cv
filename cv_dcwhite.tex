@@ -1,0 +1,213 @@
+\documentclass[11pt]{article}  % Required as first line
+
+% Page and layout settings
+\usepackage[letterpaper, top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\linespread{1.3}  % Slightly increase line spacing
+\setlength{\parindent}{0pt}  % Removes paragraph indentation
+\renewcommand{\arraystretch}{1.3}  % More space between table rows
+
+% Font and encoding
+\usepackage[utf8]{inputenc}  % For pdflatex
+\usepackage[T5]{fontenc}     % For Vietnamese support
+
+% Hyperlinks and URLs
+\usepackage{hyperref}
+\usepackage{url}
+
+% Text formatting and layout
+\usepackage{parskip}         % Adds spacing between paragraphs, no indent
+\usepackage[none]{hyphenat}  % Disable hyphenation
+
+% Tables
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{ltablex}
+\keepXColumns
+
+% Lists
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+% Citations (optional — used only if you call \cite or \bibliography)
+\usepackage{natbib}
+% \usepackage{etaremune}  % Removed for non-numbered references
+
+% Rename bibliography section if needed
+\renewcommand{\refname}{Publications}
+
+
+\begin{document}
+
+% Centered header
+\begin{flushleft}
+  \textbf{Nominee name:} Jay T. Lennon\\
+  \textbf{Institution:} Indiana University, Bloomington \\
+  \textbf{Position title:} Professor of Biology\\
+  \textbf{Email address:} \href{mailto:lennonj@iu.edu}{lennonj@iu.edu} \\
+  \textbf{Lab website:} \url{https://lennonlab.github.io} \\
+  %Lab wiki: \url{https://lennon.bio.indiana.edu} \\
+  \textbf{Google Scholar:} \url{https://goo.gl/qx4hHR}
+\end{flushleft}
+
+%\vspace{1em}
+
+\section*{A. Education}
+\noindent
+\begin{tabular}{@{}l@{\hspace{3em}}l@{\hspace{3em}}l@{\hspace{3em}}l@{}}
+1995 & B.S.    & Biology     & SUNY-ESF at Syracuse \\
+1999 & M.A.    & Ecology and Evolutionary Biology  & University of Kansas \\
+2004 & Ph.D. & Ecology and Evolutionary Biology  & Dartmouth College \\
+\end{tabular}
+
+
+\section*{B. Positions and honors}
+\vspace{-0.1em}
+\noindent\underline{\textbf{Positions}}\\[-2em]
+\noindent
+
+\begin{tabularx}{\textwidth}{@{}l@{\hspace{2em}}X@{}}
+2023         & Visiting Professor, Goethe University, Frankfurt, Germany \\
+2023         & Short-term Visiting Professor, ETH Zürich, Centre for Origin and Prevalence of Life \\
+2020--2024   & Faculty, Complex Networks and Systems, Indiana University \\
+2018--2022   & Faculty, Microbial Diversity Course, Marine Biological Laboratory, Woods Hole \\
+2016--       & Professor, Indiana University, Department of Biology \\
+2016--2017   & Whitman Center Associate, Marine Biological Laboratory, Woods Hole \\
+2016--2017   & Visiting Professor, Montana State University, Department of Microbiology and Immunology \\
+2012--2016   & Associate Professor, Indiana University, Department of Biology\\
+2012         & Associate Professor, W.K. Kellogg Biological Station, Department of Microbiology and Molecular Genetics, Michigan State University \\
+2011--2016   & Ad hoc Graduate Faculty, Michigan Technological University \\
+2008--2012   & Adjunct Professor, Plant Biology Department, Michigan State University \\
+2006--2012   & Assistant Professor, W.K. Kellogg Biological Station, Department of Microbiology and Molecular Genetics, Michigan State University \\
+2004--2006   & Postdoctoral Research Associate, Brown University, Department of Ecology and Evolutionary Biology \\
+\end{tabularx}
+
+%\vspace{1 em} % Reduce space
+\noindent\underline{\textbf{Honors}}\\[-2em] % Reduce space
+\noindent
+
+\begin{tabularx}{\textwidth}{@{}l@{\hspace{2em}}X@{}}
+2025--2028  & Chair, Scientific Unit on Applied and Environmental Microbiology, American Society for Microbiology (ASM) \\
+2025 --     & Steering committee, International Union for Conservation (IUCN), Microbial Conservation Specialist Group (MCSG)\\
+2024        & Highly Cited Author, American Society for Microbiology (ASM) \\
+2024        & Soil Stars, Applied Microbiology International (AMI) \\ 
+2023        & Humboldt Prize, Alexander von Humboldt Foundation \\
+2022--2025  & Governing Board, Ecological Society of America (ESA) \\
+2022--2027  & Chair, Climate Change Task Force, American Academy of Microbiology (AAM) \\
+2021        & Fellow, Ecological Society of America (ESA) \\
+2020--2022  & Distinguished Lecturer, American Society for Microbiology (ASMDL) \\
+2020--2026  & Governor, American Academy of Microbiology (AAM) \\
+2019        & Fellow, American Academy of Microbiology (AAM) \\
+2019--2024  & Highly Cited Researcher, Clarivate, Cross-Field \\
+2018        & Fellow, American Association for the Advancement of Science (AAAS) \\
+2012        & Kavli Fellow, National Academy of Sciences \\
+2004        & USDA National Research Initiative (NRI) Postdoctoral Fellowship Award \\
+2004        & Hannah T. Croasdale Graduate Scholar Award, Dartmouth College \\
+2004        & Milton L. Shifman Endowed Scholarship, Marine Biological Laboratory \\
+2004        & Albert Cass Fellowship, The Rockefeller University \\
+%2004        & Nathan Jenks Biology Award, Dartmouth College \\
+%2003        & Best student presentation, North American Lake Management Society National Meeting, Mashantucket, CT \\
+2002        & NSF Doctoral Dissertation Improvement Grant (DDIG) \\
+%1999--2004  & Dartmouth Fellowship, Dartmouth College \\
+%1995        & Undergraduate honors: \textit{Magna Cum Laude}; President’s List; Alpha Sigma Xi, SUNY-ESF \\
+%1992        & Outstanding history student, SUNY Oswego \\
+\end{tabularx}
+
+%\newpage
+\section*{C. Publications}
+(10 most relevant of >150. For full list, see: \href{https://scholar.google.com/citations?hl=en&user=d-hWatsAAAAJ}{Google Scholar}, \href{https://www.ncbi.nlm.nih.gov/myncbi/jay.lennon.1/bibliography/public/}{PubMed}, or \href{https://www.ncbi.nlm.nih.gov/myncbi/jay.lennon.1/bibliography/public/}{Lab Website})
+
+\vspace{-0.05em}
+
+\begin{itemize}[leftmargin=*, label={}, itemsep=1em]
+
+\item Lennon JT, Lehmkuhl BK, Chen L, Illingworth M, Kuo V, Muscarella ME (2025) \\Resuscitation-promoting factor (Rpf) terminates dormancy among diverse soil bacteria.\\
+\textit{mSystems} 10: 01517-24. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2025b.pdf}{(pdf)}
+
+\item Moger-Reischer RZ, Glass JI, Wise KS, Sun L, Bittencourt DMC, Lehmkuhl BK, Schoolmaster DR Jr, Lynch M, Lennon JT (2023) Evolution of a minimal cell. \textit{Nature} 620: 122--127. \href{https://lennonlab.github.io/assets/publications/Moger-Reischer_etal_2023.pdf}{(pdf)}
+
+\item Schwartz DA, Shoemaker WR, Măgăliee A, Weitz JS, Lennon JT (2023) Bacteria-phage coevolution with a seed bank. \textit{ISMEJ} 17: 1315–1325. \href{https://lennonlab.github.io/assets/publications/Schwartz_etal_2023b.pdf}{(pdf)}
+
+\item Schwartz DA, Rodriguez-Ramos J, Shaffer M, Flynn F, Daly R, Wrighton KC, Lennon JT (2023) Human-gut phages harbor sporulation genes. \textit{mBio} e0018223. \href{https://lennonlab.github.io/assets/publications/Schwartz_etal_2023a.pdf}{(pdf)}
+
+\item Schwartz DA, Lekmkuhl BK, Lennon JT (2022) Phage-encoded sigma factors alter bacterial dormancy. \textit{mSphere} e00927-22. \href{https://lennonlab.github.io/assets/publications/Schwartz_etal_2022.pdf}{(pdf)}
+
+\item Shoemaker WR Jones SE Muscarella ME Behringer MG Lehmkuhl BK Lennon JT (2021) Microbial population dynamics and evolutionary outcomes under extreme energy-limitation. \textit{Proceedings of the National Academy of Sciences of the United States of America} 118: e2101691118. \href{https://lennonlab.github.io/assets/publications/Shoemaker_etal_2021b.pdf}{(pdf)}
+
+\item Lennon JT, Muscarella ME, Placella SA, Lehmkuhl BK (2018) How, when, and where relic DNA biases estimates of microbial diversity. \textit{mBio} 9: e00637-18. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2018.pdf}{(pdf)}
+
+\item Locey KJ, Lennon JT (2016) Scaling laws predict global microbial diversity. \textit{Proceedings of the National Academy of Sciences of the United States of America} 113: 5970–5975. \href{https://lennonlab.github.io/assets/publications/Locey_Lennon_2016.pdf}{(pdf)}
+
+\item Lau JA, Lennon JT (2012) Rapid responses of soil microorganisms improve plant fitness in novel environments. \textit{Proceedings of the National Academy of Sciences of the United States of America} 109: 14058–14062. \href{https://lennonlab.github.io/assets/publications/Lau_Lennon_2012.pdf}{(pdf)}
+
+\item Jones SE, Lennon JT (2010) Dormancy contributes to the maintenance of microbial diversity. \textit{Proceedings of the National Academy of Sciences of the United States of America} 107: 5881-5886. \href{https://lennonlab.github.io/assets/publications/Jones_Lennon_2010.pdf}{(pdf)}
+
+\end{itemize}
+
+\vspace{0.5 em} % Reduce space
+\section*{D. Grants and funding}
+
+(Active over last 10 years. For complete list of awards totaling $>$~\$31.6 M, see: \href{https://lennonlab.github.io/assets/docs/Lennon_CV.pdf}{full-length CV})
+
+\vspace{-1.25em}
+\noindent
+\begin{tabularx}{\textwidth}{@{}l@{\hspace{2em}}X@{}}
+2025--2026	& \textit{Pending}: National Science Foundation (NSF) “Conference: A unifying framework for dormancy across scales in natural, managed, and engineered ecosystems” Co-PI, \$99,000\\
+2025--2030	& \textit{Pending}: National Institutes of Health (NIH) “Cellular dormancy and virus entrapment” PI, \$2,161,566\\
+2025--2028 & Department of Natural Resources (DNR) "Development and testing of microbial mitigation of coalbed methane emissions in Indiana: A geo-microbial-engineering approach” Co-PI, \$287,295 \\
+2023--2024 & Department of Defense (DoD) “Molecular-based methods for the mark-recapture of microorganisms” PI, \$225,000 \\
+2023 & Humboldt Research Fellowship, Alexander von Humboldt Foundation, Germany, €60,000 (\$68,780) \\
+2022--2025 & Army Research Office (ARO) “Complexity of the gut microbiome: a quantitative and experimental approach” PI, \$449,862 \\
+2020--2025 & National Science Foundation (NSF) “BII-Implementation: Multiscale interactions of nested genomes in symbiosis: From genes to global change” Co-investigator, \$12.5M \\
+2020--2023 & National Science Foundation (NSF) “Collaborative Research: BEE: A dormancy refuge in host-parasite eco-evolutionary dynamics” PI, \$976,617 \\
+2020--2025 & National Science Foundation (NSF) “CNH2-L: Resilience to drought or a drought of resilience? The potential for interactions and feedbacks between human adaptation and ecological adaptation” Co-PI, \$1,599,684 \\
+2020--2023 & National Aeronautics and Space Administration (NASA) “Energy limitation and the evolution of microbial dormancy” PI, \$733,792 \\
+2020 & Army Research Office (ARO) "Mechanistic insight into bacterial metabolism from long-term evolution experiments" PI, \$550,000 \\
+2018--2020 & Army Research Office (ARO) “Microbial evolution: linking genes, phenotype, and fitness in bacterial populations” PI, \$499,330 \\
+2018--2019 & Indiana University Collaborative Research Grant (IUCRG). “Complexity of the gut microbiome: an experimental approach” PI, \$74,990 \\
+2017--2018 & Army Research Office (ARO) "Connecting phenotype to genotype in evolved prokaryotic populations.” Co-PI, \$197,390 \\
+2015--2022 & Department of Defense, Multidisciplinary University Research Initiatives (MURI) Program, “Mechanisms of prokaryotic evolution” PI, \$6,248,455 \\
+2015--2020 & National Science Foundation (NSF) “Dimensions: Collaborative Research: Microbial seed banks: processes and patterns of dormancy-driven biodiversity” PI, \$1,997,144 \
+\end{tabularx}
+
+\section*{E. Teaching and mentoring}
+\vspace{-0.5em}
+I prioritize teaching and mentorship as a central part of my science and scholarship, helping to train the next generation of microbiologists across academic, industry, and public sectors. Within my laboratory, I have mentored dozens of graduate students and postdoctoral researchers, many of whom now hold faculty positions at research universities, primarily undergraduate institutions, and tribal colleges. An equal number of trainees have launched successful careers in industry, including agricultural genomics, food microbiology, health care informatics, and synthetic biology, as well as in nonprofit and governmental organizations. In additon, I have worked closely with more than 50 undergraduate and high school researchers, as well as K-12 teachers, many from groups historically underrepresented in science. These experiences have taken place both in the lab and through structured outreach and education initiatives.
+
+Together, these efforts reflect a deep and sustained investment in mentoring scientists across multiple stages of their careers and in diverse educational settings, from classrooms to field stations and marine laboratories. My goal has been to foster not only technical expertise but also intellectual curiosity, scientific independence, and a sense of responsibility for addressing microbial challenges in a changing world.
+
+\section*{F. Service}
+\vspace{-0.5em}
+Over the past two decades, I have provided sustained service to the microbial sciences, with recent efforts focused on climate action, strategic leadership, and international collaboration. I was recently appointed to Chair of the Scientific Unit on Applied and Environmental Microbiology (2025–2028) for ASM, where I am shaping the scientific priorities and programming of the society. I also serve as Scientific Program Leader for ASM’s Strategic Visioning initiative (2024–2025), a role that focuses on identifying emerging challenges and opportunities for the field.
+
+My service increasingly reflects a commitment to applying microbial science to global sustainability. I am a founding member of “A Global Partnership to Address Climate and Biodiversity Crisis,” a joint initiative of ASM and the International Union of Microbiological Societies (2023–present), and Chair of the Climate Change Task Force for the American Academy of Microbiology (2022–2027). I have also helped shape climate-related content as a Track Leader (2022–2023) and Distinguished Lecturer (2020–2022) for ASM.
+
+My editorial contributions include serving on the board of the \textit{ISME Journal} (2021–2027) and as past editor for \textit{Environmental Microbiology }and \textit{Environmental Microbiology Reports} (2016–2022), along with \textit{Frontiers in Terrestrial Microbiology} (2010–2020).
+
+I have also contributed to ASM through multiple leadership roles, including Governor of the American Academy of Microbiology (2020–2026), member of the Council on Microbial Sciences (2017–2019), and the governing board of the Ecological Society of America (ESA) (2017–2020). Earlier roles include chairing divisions and sections focused on microbial ecology within both ASM and the ESA. These activities reflect a consistent commitment to advancing microbial sciences through community leadership, interdisciplinary integration, and public engagement.
+
+\section*{G. Teaching philosophy}
+\vspace{-0.5em}
+My goal as an educator is to cultivate curiosity and creativity by teaching students how to ask and answer scientific questions in the classroom, the laboratory, and the field. I begin by engaging students with core concepts, then emphasize how new discoveries fit within broader theoretical frameworks. When students trace the evolution of ideas across disciplines, they develop deeper insight and begin to ask their own questions. I use inquiry-based approaches to help them formulate hypotheses, make predictions, and test them through experimentation and data analysis.
+
+In my undergraduate course, \textit{Microbiomes: Host and Environmental Health}, students explore microbiome science through lectures, small group discussions, primary literature, and a popular science book club. We design experiments using Winogradsky bioreactors to test predictions about microbial community resistance and resilience.
+
+In my graduate level course, \href{https://qbiodiversity.netlify.app/}{\textit{Quantitative Biodiversity}}, students explore core concepts, patterns, and tools used to study biodiversity across diverse forms of life, including microorganisms. They develop coding skills, visualize multivariate data, and test hypotheses using statistical and phylogenetic techniques to analyze the distribution of functional traits, all while using open source tools and reproducible workflows.
+
+Beyond my home institution, I have developed immersive learning experiences at the interface of microbial ecology, evolution, and environmental science. I co-founded and directed a hands-on summer course in \textit{Microbial Metagenomics} at Michigan State University, which trained students from dozens of institutions across North America and Europe in field, molecular, and informatic methods to link microbial diversity with greenhouse gas fluxes. 
+
+I also served as an instructor for \textit{Microbial Diversity} at the Marine Biological Laboratory in Woods Hole, Massachusetts, where I taught students to model microbial interactions using differential equations and test predictions through experimental evolution of marine bacteria and their viruses.
+
+Together, these experiences reflect my commitment to training rigorous, creative, and independent scientists.
+
+\section*{H. Other information}
+\vspace{-0.5em}
+Throughout my career, I have worked to ensure that opportunities in science are accessible to individuals from all backgrounds. In my laboratory group, I cultivate a respectful and supportive environment that values the unique perspectives and experiences of each member. I believe that scientific progress is strongest when it draws from a wide range of voices and lived experiences.
+
+At Indiana University, I contribute to programs that expand access to science for people who may not have had traditional pathways into research. I actively mentor students through the Jim Holland Summer Science Program and the STEM Summer Scholars Institute. These initiatives provide high school and undergraduate students with immersive research experiences and professional development. As Chair of the Evolution, Ecology, and Behavior (EEB) Section within the Department of Biology, I supported data-driven efforts to improve recruitment and retention of graduate students from underserved and first-generation backgrounds. I have also led faculty hiring efforts that bring new perspectives and talents to our department.
+
+In national scientific societies, I emphasize fairness, transparency, and opportunity in leadership and programming. As a Governor of the American Academy of Microbiology, I chair the Climate Change Task Force, where I assembled a globally representative team with varied expertise. As a Track Chair and member of the program committee for the ASM, I have helped organize sessions that highlight a broad range of speakers, research topics, and career paths, while also organizing social events that create community. 
+
+I view these efforts not as extra responsibilities but as essential to building a strong and inclusive scientific community that reflects the values and needs of the broader society.
+
+\end{document}
