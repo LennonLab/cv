@@ -1,0 +1,406 @@
+\documentclass[11pt]{article}
+
+% Page layout
+\usepackage[letterpaper,margin=1in]{geometry}
+
+% Encoding & fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[T5]{fontenc} % For Vietnamese support
+
+% Clickable links (visible)
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\urlstyle{same}
+
+% ---- Continuous reverse numbering with hanging indent ----
+\newcounter{pubs}
+\newlength\numwidth
+\setlength\numwidth{2.6em} % width of the number gutter
+
+% Set once to total number of entries across all headings
+\newcommand{\TotalPubs}[1]{\setcounter{pubs}{#1}}
+
+% One publication entry: prints current number, then decrements; wraps nicely
+\newcommand{\pub}[1]{%
+  \par\noindent
+  \makebox[\numwidth][r]{\arabic{pubs}.~}%
+  \hangindent=\numwidth \hangafter=1
+  #1\par
+  \addtocounter{pubs}{-1}%
+  \addvspace{0.5\baselineskip}% space between entries
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Jay T. Lennon -- List of publications}}\\[0.5em]
+  Lab website: \href{https://lennonlab.github.io}{https://lennonlab.github.io}\\
+  Google Scholar: \href{https://goo.gl/qx4hHR}{https://goo.gl/qx4hHR}\\
+  ORCID: \href{https://orcid.org/0000-0003-3126-6111}{https://orcid.org/0000-0003-3126-6111}\\
+  ResearcherID: \href{https://researchid.co/lennonj}{https://researchid.co/lennonj}
+\end{center}
+
+% ==== Set total number of entries across all headings ====
+\TotalPubs{157}
+
+\section*{Books}
+\pub{Lennon JT (2025) \textit{In Suspended Animation: The Science of Dormancy and a New Understanding of Time, Survival, and the Boundaries of Life.} Commissioned at Princeton University Press.}
+
+\section*{In review}
+\pub{Janet K. Jansson, Avi I. Flamholz, Raquel Peixoto, Salles JF, Lennon JT, Rosado A, Sanders IR, Jacobsen CS, Makhalanyane T, Schadt C, Gilbert JA (2025) Heterotrophic respiration by soil microbes in a changing climate. In review at \textit{Nature Reviews Earth \& Environment}}
+
+\pub{Wang J, Hu A, Cui Y, Bercovici S, Lu X, Lennon JT, Soininen J, Liu Y, Jiao N (2025) Towards the chemogeography of dissolved organic matter in the global ocean. In review at \textit{Environmental Science \& Technology}}
+
+\pub{McGill B, Jarzyna M, Diaz R, Barnes C, Diaz FH, Economo E, French C, Hagen O, James H, Kivlin S, Lahiri S, Lennon JT, Mascarenhas R, Ohyama L, Rabosky DL, Zhu K, Hickerson M, Gillespie R (In review) A call to develop a coherent discipline of biodiversity science to address global change.}
+
+\section*{Preprints}
+\pub{Karakoç C, Shoemaker WR, Lennon JT (2025) Evolutionary bioenergetics of sporulation. \textit{bioRxiv}. \href{https://www.biorxiv.org/content/10.1101/2025.08.26.672491v1}{doi:10.1101/2025.08.26.672491}.}
+
+\pub{Mueller EA, van der Elst L, Gumennik A, Lennon JT (2025) The Enterostat: a 3D-printed bioreactor for simulating gut microbiome dynamics. \textit{bioRxiv}. \href{https://www.biorxiv.org/content/10.1101/2025.08.21.671663v1}{doi:10.1101/2025.08.21.671663}.}
+
+\pub{Overcast I, Calderon-Sanou I, Creer S, Dominguez-Garcia V, Hagen O, Hickerson MI, Jörger Hickfang T, Krehenwinkel H, Lennon JT, Méndez L, Méndez M, Onstein R, Pereira H, Qin C, Winter M, Yu DW, Zurell D, Gillespie RG (2025) The distribution of genetic diversity in ecological communities: A unifying measure for monitoring biodiversity change. \textit{EcoEvoRxiv}. doi:10.32942/X2Z64W. \href{https://ecoevorxiv.org/repository/view/9169/}{(link)} In review at \textit{Conservation Letters})}
+
+\pub{Wang J, Hu A, Cui Y, Bercovici SK, Lennon JT, Soininen J, Liu Y, Jiao N (2025) Geographical patterns and drivers of dissolved organic matter in the global ocean. \textit{Research Square}. doi:10.21203/rs.3.rs-6624570/v1. \href{https://assets-eu.researchsquare.com/files/rs-6624570/v1/a75822e6-0649-4c95-919e-3ba016f0bc96.pdf?c=1747022553}{(link)}}
+
+\pub{Bogar G, Lennon JT, Vander Stel H, Evans SE (2025) Simple, rapid, and sensitive assay for the quantification of total polysaccharides to estimate extracellular polymeric substances (EPS) in soil. \textit{bioRxiv} doi:10.1101/2025.05.22.654594. \href{https://www.biorxiv.org/content/10.1101/2025.05.22.654594v1}{(link)} In review at \textit{Journal of Microbiological Methods}}
+
+\pub{Măgălie A, Marantos A, Schwartz DA, Marchi J, Lennon JT, Weitz JS (2024) Phage infection fronts trigger early sporulation and collective defense in bacterial populations. \textit{bioRxiv}. doi:10.1101/2024.05.22.595388. \href{https://www.biorxiv.org/content/10.1101/2024.05.22.595388v1.full.pdf}{(link)} In revision at \textit{ISMEJ}}
+
+\pub{Hill CA, McMullen JC, Lennon JT (2024) Nitrogen enrichment alters selection on rhizobial genes. \textit{bioRxiv}. doi:10.1101/2024.11.25.625319. \href{https://www.biorxiv.org/content/10.1101/2024.11.25.625319v1.full.pdf}{(link)} In revision at \textit{mSystems}}
+
+\pub{Hu A, Cui Y, Bercovici A, Tanentzap AJ, Lennon JT, Lin X, Yang Y, Liu Y, Osterholz H, Dong H, Lu Y, Jiao N, Wang J (2024) Photochemical processes drive thermal responses of dissolved organic matter in the dark ocean. \textit{bioRxiv}. doi:10.1101/2024.09.06.611638. \href{https://www.biorxiv.org/content/10.1101/2024.09.06.611638v1.full.pdf}{(link)} In revision at \textit{Nature Communications}}
+
+\section*{Patents}
+
+\pub{Lennon JT, van der Elst LA, Mueller EA, Gumennik A (2023) Gut bioreactor and method for making the same. US Patent 11,840,681 B2. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2023b.pdf}{(pdf)}}
+
+\section*{White papers}
+
+\pub{Rappuoli R, Nguyen N, Bloom DE, Brooks CG, Egamberdieva D, Lawley TD, Morhard R, Mukhopadhyay A, Lennon JT, Peixoto RS, Silver PA, Stein LY (2025) Microbial solutions for climate change — Toward an economically resilient future. \textit{American Society for Microbiology}. \href{https://lennonlab.github.io/assets/publications/Rappuoli_etal_2025b.pdf}{(pdf)}}
+
+\pub{Lennon JT and 32 others (2025) Colloquium report: Water, waterborne
+pathogens and public health: environmental drivers. American Society for Microbiology, Washington, DC. \href{https://asm.org/reports/water-waterborne-pathogens-and-public-health-envi}{(link)}}
+
+\pub{Lennon JT and 28 others (2023) Colloquium report: Microbes in models: integrating microbes into earth system models for understanding climate change. American Society for Microbiology, Washington, DC. \href{https://www.ncbi.nlm.nih.gov/books/NBK592518/}{(link)}}
+
+\pub{Lennon JT and 28 others (2023) Colloquium report: The role of microbes in mediating methane emissions. American Society for Microbiology, Washington, DC. \href{https://pubmed.ncbi.nlm.nih.gov/38194471/}{(link)}}
+
+\section*{Commentaries and essays}
+
+\pub{Lennon JT, Bittleston LS, Chen Q, Cooper VS, Fernández J, Gilbert JA, Häggblom MM, Harper LV, Jansson JK, Jiao N, Kuurstra EM, Peixoto RS, Rappuoli R, Schembri MA, Ventosa A, Vullo DL, Zhang C, Nguyen NK (2025) Microbes without borders: uniting societies for climate action. 
+
+\textit{On 23 September 2025, paper will be published in:}
+\begin{itemize}
+  \item \textit{mBio} doi.org/10.1128/mbio.02136-25
+    \item \textit{Sustainable Microbiology}
+    \item \textit{ISMEJ}
+    \item \textit{FEMS Microbiology Ecology}
+    \item \textit{Sustainable Microbiology}  
+    \item \textit{Ocean-Land-Atmosphere Research}
+    \item \textit{Microbiology Australia}
+\end{itemize}}
+
+\pub{Gilbert JA, Peixoto RS, Scholz AH, Dominguez-Bello MG, Korsten L, Berg G, Singh B, Boetius A, Wang F, Greening C, Jansson J, Lennon JT, Souza V, Thomas T, Cowan D, Crowhter T, Nguyen N, Harper L, Haraoui LP, Ishaq SL, Redford K (2025) The IUCN Microbial Conservation Specialist Group (MCSG): A global framework for safeguarding  microbial biodiversity. In press at \textit{Nature Microbiology} doi:10.1038/s41564-025-02113-5. \href{https://www.nature.com/articles/s41564-025-02113-5}{(link)}}
+
+\pub{Lennon JT, Rappuoli R, Bloom DE, Brooks CG, Egamberdieva D, Lawley TD, Morhard R, Mukhopadhyay A, Nguyen N, Peixoto RS, Silver PA, Stein LY (2025) Microbial solutions for climate change require global partnership. \textit{mBio} 16: 10.1128/mbio.00778-25. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2025a.pdf}{(pdf)}}
+
+\pub{Rappuoli R, Nguyen N, Bloom DE, Brooks CG, Egamberdieva D, Lawley TD, Morhard R, Mukhopadhyay A, Lennon JT, Peixoto RS, Silver PA, Stein LY (2025) Microbes can capture carbon and degrade plastic — why aren’t we using them more? \textit{Nature} 639: 864–866. \href{https://lennonlab.github.io/assets/publications/Rappuoli_etal_2025a.pdf}{(pdf)}}
+
+\pub{Peixoto R, Voolstra CR, Stein LY, Hugenholtz P, Salles JF, Amin SA, Häggblom M, Gregory A, Makhalanyane TP, Wang F, Agbodjato NA, Wang Y, Jiao N, Lennon JT, Ventosa A, Bavoil PM, Miller V, Gilbert JA (2024) Microbiology at the brink: a unified call for action against climate catastrophe. 
+
+\textit{Published in:}
+\begin{itemize}
+  \item Nature Microbiology 9: 3084–3085 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024a.pdf}{(pdf)}
+  \item Nature Communications 15: 9637 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024b.pdf}{(pdf)}
+  \item Nature Reviews Microbiology 23: 1–2 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024c.pdf}{(pdf)}
+  \item Nature Reviews Earth and Environment 6: 4–5 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024d.pdf}{(pdf)}
+  \item ISMEJ 18: wrae219 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024e.pdf}{(pdf)}
+  \item mSystems 11: e0141624 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024f.pdf}{(pdf)}
+  \item Communications Biology 7: 1466 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024g.pdf}{(pdf)}
+  \item Communications Earth and Environment 5: 672 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024h.pdf}{(pdf)}
+  \item FEMS Microbiology Ecology 100: fiae144 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024i.pdf}{(pdf)}
+  \item NPJ Biodiversity 3: 34 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024j.pdf}{(pdf)}
+  \item NPJ Biofilms and Microbiomes 10: 122 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024k.pdf}{(pdf)}
+  \item NPJ Sustainable Agriculture 2: 23 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024l.pdf}{(pdf)}
+  \item NPJ Climate Action 3: 1–3 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024m.pdf}{(pdf)}
+  \item Sustainable Microbiology 1: qvae029 \href{https://lennonlab.github.io/assets/publications/Peixoto_etal_2024n.pdf}{(pdf)}
+\end{itemize}}
+  
+\pub{Beattie GA, Cotrufo FM, Crowther TW, Edlund A, Salles JF, Gilbert JK, Jansson JK, Jensen PR, Lennon JT, Makhalanyane T, Martiny JBH, Newman DK, Stevenson M (2024) Soil microbial strategies for climate mitigation: Report from a climate action workshop in Las Vegas, Nevada, February 2024. \textit{Sustainable Microbiology} 1: qvae033. \href{https://lennonlab.github.io/assets/publications/Beattie_etal_2024.pdf}{(pdf)}}
+
+\pub{Lennon JT (2020) Microbial life underfoot. \textit{mBio} 11: e03201-19. \href{https://lennonlab.github.io/assets/publications/Lennon_2020.pdf}{[pdf]}}
+
+\pub{Lennon JT, Locey KJ (2018) There are more microbial species on Earth than stars in the galaxy. \textit{Aeon}. \href{https://aeon.co/ideas/there-are-more-microbial-species-on-earth-than-stars-in-the-sky}{(link)}}
+
+\pub{Lau JA, Lennon JT, Heath KD (2017) Trees harness the power of microbes to survive climate change. \textit{Proceedings of the National Academy of Sciences of the United States of America} 114: 11009–11011. \href{https://lennonlab.github.io/assets/publications/Lau_etal_2017.pdf}{(pdf)}}
+
+\section*{Book reviews}
+
+\pub{Wisnoski NI, Lennon JT (2016) Book Review. Principles of Microbial Diversity by James W. Brown. \textit{Quarterly Review of Biology} 91: 98–99. \href{https://lennonlab.github.io/assets/publications/Wisnoski_Lennon_2016.pdf}{(pdf)}}
+
+\pub{Moger-Reischer RZ, Lennon JT (2017) Book Review. \textit{The human superorganism: how the microbiome is revolutionizing the pursuit of a healthy life} by Rodney Dietert. \textit{Quarterly Review of Biology} 92: 203. \href{https://lennonlab.github.io/assets/publications/Moger-Reicher_Lennon_2017.pdf}{(pdf)}}
+
+\section*{Theses}
+
+\pub{Lennon JT (2004) The energetic importance of terrestrial carbon in lake ecosystems. Dartmouth College, 169 pp. \href{https://lennonlab.github.io/assets/publications/Lennon_2004_Thesis.pdf}{(pdf)}}
+
+\pub{Lennon JT (1999) Invasion success of the exotic \textit{Daphnia lumholtzi}: species traits and community resistance. University of Kansas, 77 pp.}
+
+\section*{Peer-reviewed}
+
+\pub{Lennon JT, Lehmkuhl BK, Chen L, Illingworth M, Kuo V, Muscarella ME (2025) \\Resuscitation-promoting factor (Rpf) terminates dormancy among diverse soil bacteria.\\
+\textit{mSystems} 10: 10.1128/msystems.01517-24. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2025b.pdf}{(pdf)}}
+
+\pub{Mueller EA, Lennon JT (2025) Residence time structures microbial communities through niche partitioning. \textit{Ecology Letters} 28: e70093. \href{https://lennonlab.github.io/assets/publications/Mueller_Lennon_2025.pdf}{(pdf)}}
+
+\pub{Nevermann HD, Gros C, Lennon JT (2025) A game of life with dormancy. \textit{Proceedings of the Royal Society B} 292: 20242543. \href{https://lennonlab.github.io/assets/publications/Nevermann_etal_2025.pdf}{(pdf)}}
+
+\pub{Zang Z, Zhang C, Park KJ, Schwartz DA, Podicheti R, Lennon JT, Gerdt JP (2025) Streptomyces secretes a siderophore that sensitizes competitor bacteria to phage infection. \textit{Nature Microbiology}. \href{https://lennonlab.github.io/assets/publications/Zang_etal_2025.pdf}{(pdf)}}
+
+\pub{Beattie GA, Edlund A, Esiobu N, Gilbert J, Nicolaisen MH, Jansson JK, Jensen P, Keiluwei M, Lennon JT, Martiny JBH, Minnisi VR, Newmann D, Peixoto R, Schadt C, van der Meer JR (2025) Soil microbiome interventions for carbon sequestration and climate mitigation. \textit{mSystems}. \href{https://lennonlab.github.io/assets/publications/Beattie_etal_2025.pdf}{(pdf)}}
+
+\pub{Webster KD, Lennon JT (2025) Dormancy in the origin, evolution, and persistence of life on Earth. \textit{Proceedings of the Royal Society B: Biological Sciences} 292: 20242035. \href{https://lennonlab.github.io/assets/publications/Webster_Lennon_2025.pdf}{(pdf)}}
+
+\pub{Waldrop MP, Ernakovich JG, Vishnivetskaya TA, Schaefer SR, Mackleprang R, Bara J, O'Brien JM, Winkel M, Barbato RA, Heffernan L, Leewis MC, Hewitt RE, Hultman J, Sun Y, Biasi C, Bradley JA, Liebner S, Ricketts MP, Muscarella ME, Schütte U, Abuah F, Whalen E, Timling I, Voight C, Taş N, Lloyd KG, Silganen HMP, Rivkina EM, Voříšková J, Tao J, Liang R, Lennon JT, Onstott TC (2025) Microbial ecology of permafrost soils: populations, processes, and perspectives. \textit{Permafrost and Periglacial Processes}. \href{https://lennonlab.github.io/assets/publications/Waldrop_etal_2025.pdf}{(pdf)}}
+
+\pub{Wu W, Hsieh C, Logares R, Lennon JT, Liu H (2024) Ecological processes shaping highly connected bacterial communities along strong environmental gradients. \textit{FEMS Microbiology Ecology} 100: fiae146. \href{https://lennonlab.github.io/assets/publications/Wu_etal_2024.pdf}{(pdf)}}
+
+\pub{Hu A, Jang KS, Tanentzap AJ, Zhao W, Lennon JT, Liu J, Li M, Stegen JC, Choi M, Lu Y, Feng X, Wang J (2024) Thermal responses of dissolved organic matter under global change. \textit{Nature Communications} 15: 576. \href{https://lennonlab.github.io/assets/publications/Hu_etal_2024.pdf}{(pdf)}}
+
+\pub{Lennon JT, Abramoff RZ, Allison SD, Burckhardt RM, DeAngelis KM, Dunne JP, Frey SD, Friedlingstein P, Hawkes CV, Hungate BA, Khurana S, Kivlin SN, Levine N, Manzoni S, Martiny AC, Martiny JBH, Nguyen N, Rawat M, Talmy D, Todd-Browne K, Vogt M, Wieder WR, Zakem E (2024) Priorities, opportunities, and challenges for integrating microorganisms into Earth system models for climate change prediction. \textit{mBio} 15: e00455-24. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2024.pdf}{(pdf)}}
+
+\pub{Moger-Reischer RZ, Glass JI, Wise KS, Sun L, Bittencourt DMC, Lehmkuhl BK, Schoolmaster DR Jr, Lynch M, Lennon JT (2023) Evolution of a minimal cell. \textit{Nature} 620: 122--127. \href{https://lennonlab.github.io/assets/publications/Moger-Reischer_etal_2023.pdf}{(pdf)}}
+
+\pub{chwartz DA, Shoemaker WR, Măgăliee A, Weitz JS, Lennon JT (2023) Bacteria-phage coevolution with a seed bank. \textit{ISMEJ} 17: 1315–1325. \href{https://lennonlab.github.io/assets/publications/Schwartz_etal_2023b.pdf}{(pdf)}}
+
+\pub{Fishman FJ, Lennon JT (2023) Macroevolutionary constraints on global microbial diversity. \textit{Ecology and Evolution} 13: e10403. \href{https://lennonlab.github.io/assets/publications/Fishman_Lennon_2023.pdf}{(pdf)}}
+
+\pub{Zhou X, Lennon JT, Lu X, Ruan A (2023) Anthropogenic activities mediate stratification and stability of microbial communities in freshwater sediments. \textit{Microbiome} 11: 191. \href{https://lennonlab.github.io/assets/publications/Zhou_etal_2023.pdf}{(pdf)}}
+
+\pub{Schwartz DA, Rodriguez-Ramos J, Shaffer M, Flynn F, Daly R, Wrighton KC, Lennon JT (2023) Human-gut phages harbor sporulation genes. \textit{mBio} e0018223. \href{https://lennonlab.github.io/assets/publications/Schwartz_etal_2023a.pdf}{(pdf)}}
+
+\pub{Wisnoski NI, Lennon JT (2023) Scaling up and down: movement ecology for microorganisms. \textit{Trends in Microbiology} 31: 242–253. \href{https://lennonlab.github.io/assets/publications/Wisnoski_Lennon_2023.pdf}{(pdf)}}
+
+\pub{Măgălie A, Schwartz DA, Lennon JT, Weitz JS (2023) Optimal dormancy strategies in fluctuating environments given delays in phenotypic switching. \textit{Journal of Theoretical Biology} 561: 111413. \href{https://lennonlab.github.io/assets/publications/Magalie_etal_2023.pdf}{(pdf)}}
+
+\pub{Lennon JT, Frost SDW, Nguyen NK, Peralta AL, Place AR, Treseder KK (2023) Microbiology and climate change: a transdisciplinary imperative. \textit{mBio} 13: e0335-22. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2023.pdf}{(pdf)}}
+
+\pub{Bolin LG, Lennon JT, Lau JA (2023) Traits of soil bacteria predict plant responses to soil moisture. \textit{Ecology} 104: e3893. \href{https://lennonlab.github.io/assets/publications/Bolin_etal_2023.pdf}{(pdf)}}
+
+\pub{Irvine R, Houser M, Marquart-Pyatt ST, Bolin L, Browning EG, Dott G, Evans SE, Howard M, Lau J, Lennon JT (2023) Soil health through farmers’ eyes: Toward a better understanding of how farmers view, value, and manage for healthier soils. \textit{Journal of Soil and Water Conservation} 78: 82–92. \href{https://lennonlab.github.io/assets/publications/Irvine_etal_2023.pdf}{(pdf)}}
+
+\pub{McMullen JG, Lennon JT (2023) Mark-recapture of microorganisms.\textit{Environmental \\ Microbiology} 25: 150–157. \href{https://lennonlab.github.io/assets/publications/McMullen_Lennon_2023.pdf}{(pdf)}}
+
+\pub{Webster KD, Schimmelmann A, Drobniak A, Mastalerz M, Lagarde LR, Boston PJ, Lennon JT (2022) Diversity and composition of cave methanotrophic communities. \textit{Microbiology Spectrum} 10: e0156621. \href{https://lennonlab.github.io/assets/publications/Webster_etal_2022.pdf}{(pdf)}}
+
+\pub{Schwartz DA, Lekmkuhl BK, Lennon JT (2022) Phage-encoded sigma factors alter bacterial dormancy. \textit{mSphere} e00927-22. \href{https://lennonlab.github.io/assets/publications/Schwartz_etal_2022.pdf}{(pdf)}}
+
+\pub{Shoemaker WR, Polezhaeva E, Givens KB, Lennon JT (2022) Seed banks alter the molecular evolutionary dynamics of \textit{Bacillus subtilis}. \textit{Genetics} 221: iyac071. \href{https://lennonlab.github.io/assets/publications/Shoemaker_etal_2022.pdf}{(pdf)}}
+
+\pub{Hu A, Choi M, Tanentzap AJ, Liu J, Jang KS, Lennon JT, Liu Y, Soininen J, Lu X, Zhang Y, Shen J, Wang J (2022) Ecological networks of dissolved organic matter and microorganisms under global change. \textit{Nature Communications} 13: 3699. \href{https://lennonlab.github.io/assets/publications/Hu_etal_2022a.pdf}{(pdf)}}
+
+\pub{Hu A, Jang KS, Meng F, Stegen J, Tanentzap AJ, Choi M, Lennon JT, Soinenen J, Wang J (2022) Microbial and environmental processes shape the link between organic matter functional traits and composition. \textit{Environmental Science and Technology} 56: 10504-10516. \href{https://lennonlab.github.io/assets/publications/Hu_etal_2022b.pdf}{(pdf)}}
+
+\pub{Krause SMB, Bertilsson S, Grossart HP, Bodelier PLE, van Bodegom P, Lennon JT, Philippot L, Le Roux X (2022) Microbial trait-based approaches for agroecosystems. \textit{Advances in Agronomy} 175: 260–299. \href{https://lennonlab.github.io/assets/publications/Krause_etal_2022.pdf}{(pdf)}}
+
+\pub{Shoemaker WR Lennon JT (2022) Predicting parallelism and quantifying divergence in experimental evolution. \textit{mSphere} 7: e00672-21. \href{https://lennonlab.github.io/assets/publications/Shoemaker_Lennon_2022.pdf}{(pdf)}}
+
+\pub{hoemaker WR Jones SE Muscarella ME Behringer MG Lehmkuhl BK Lennon JT (2021) Microbial population dynamics and evolutionary outcomes under extreme energy-limitation. \textit{Proceedings of the National Academy of Sciences of the United States of America} 118: e2101691118. \href{https://lennonlab.github.io/assets/publications/Shoemaker_etal_2021b.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Rillig_etal_2021.pdf}{commentary}, \href{https://lennonlab.github.io/assets/publications/Shoemaker_etal_2021b_Suppl.pdf}{supplement)}}
+
+\pub{Lennon JT den Hollander F Wilke-Berenguer M Blath J (2021) Principles of seed banks: complexity emerging from dormancy. \textit{Nature Communications} 2: 4807. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2021a.pdf}{(pdf)}}
+
+\pub{Wisnoski NI Lennon JT (2021) Stabilising role of seed banks and the maintenance of bacterial diversity. \textit{Ecology Letters} 24: 2328–2338. \href{https://lennonlab.github.io/assets/publications/Wisnoski_Lennon_2021.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Wisnoski_Lennon_2021_Suppl.pdf}{supplement)}}
+
+\pub{Shoemaker WR Polezhaeva E Givens KB Lennon JT (2021) Molecular evolutionary dynamics of energy limited microorganisms. \textit{Molecular Biology and Evolution} 38: msab195. \href{https://lennonlab.github.io/assets/publications/Shoemaker_etal_2021a.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Shoemaker_etal_2021a_Suppl.zip}{supplement)}}
+
+\pub{Lamit LJ, Romanowicz KJ, Potvin LR, Lennon JT, Tringe SG, Chimner RA, Kolka RK, Kane ES, Lilleskov EA (2021) Peatland microbial community responses to plant functional group and drought are depth-dependent. \textit{Molecular Ecology} 30: 5119–5136. \href{https://lennonlab.github.io/assets/publications/Lamit_etal_2021.pdf}{[pdf]}}
+
+\pub{Kuo V, Lehmkuhl BK, Lennon JT (2021) Resuscitation of the microbial seed bank alters plant-soil interactions. \textit{Molecular Ecology} 30: 2905–2914. \href{https://lennonlab.github.io/assets/publications/Kuo_etal_2021.pdf}{[pdf]}}
+
+\pub{Wisnoski NI, Lennon JT (2020) Microbial community assembly in a multi-layer dendritic metacommunity. \textit{Oecologia} 195: 13–24. \href{https://lennonlab.github.io/assets/publications/Wisnoski_Lennon_2020.pdf}{[pdf]}}
+
+\pub{Mobilian C, Wisnoski NI, Lennon JT, Abler M, Widney S, Craft CB (2020) Differential effects of press vs. pulse seawater intrusion on microbial communities of a tidal freshwater marsh. \textit{Limnology and Oceanography Letters} 8: 154–161. \href{https://lennonlab.github.io/assets/publications/Mobilian_etal_2020.pdf}{[pdf]}}
+
+\pub{Muscarella ME, Howey XM, Lennon JT (2020) Trait-based approach to bacterial growth efficiency. \textit{Environmental Microbiology} 22: 3494–3504. \href{https://lennonlab.github.io/assets/publications/Muscarella_etal_2020.pdf}{[pdf]}}
+
+\pub{Moger-Reischer RZ, Snider EZ, McKenzie KL, Lennon JT (2020) Low costs of adaptation to dietary restriction. \textit{Biology Letters} 16: 20200008. \href{https://lennonlab.github.io/assets/publications/Moger-Reischer_etal_2020.pdf}{[pdf]}}
+
+\pub{Locey KJ, Muscarella ME, Larsen ML, Bray SR, Jones SE, Lennon JT (2020) Dormancy dampens the microbial distance-decay relationship. \textit{Philosophical Transactions of the Royal Society B} 375: 20190243. \href{https://lennonlab.github.io/assets/publications/Locey_etal_2020.pdf}{[pdf]}}
+
+\pub{Lennon JT, Locey KJ (2020) More evidence for Earth's massive microbiome. \textit{Biology Direct} 15: 5. \href{https://lennonlab.github.io/assets/publications/Lennon_Locey_2020.pdf}{[pdf]}}
+
+\pub{Wisnoski NI, Muscarella ME, Larsen ML, Peralta AP, Lennon JT (2020) Metabolic insight into bacterial community assembly across ecosystem boundaries. \textit{Ecology} 101: e02968. \href{https://lennonlab.github.io/assets/publications/Wisnoski_etal_2020.pdf}{[pdf]}}
+
+\pub{Yin Y, Masalerz M, Lennon JT, Drobniak A, Schimmelmann A (2020) Characterization and microbial mitigation of fugitive methane emissions from oil and gas wells: Example from Indiana, USA. \textit{Applied Geochemistry} 118: 104619. \href{https://lennonlab.github.io/assets/publications/Yin_etal_2020.pdf}{(pdf)}}
+
+\pub{Mueller EA, Wisnoski NI, Peralta AL, Lennon JT (2019) Microbial rescue effects: how microbiomes can save hosts from extinction. \textit{Functional Ecology} 34: 2055--2064. \href{https://lennonlab.github.io/assets/publications/Mueller_etal_2019.pdf}{(pdf)}}
+
+\pub{Moger-Reischer RZ, Lennon JT (2019) Microbial aging and longevity. \textit{Nature Reviews Microbiology} 17: 79--690. \href{https://lennonlab.github.io/assets/publications/Moger-Reischer_Lennon_2019.pdf}{(pdf)}}
+
+\pub{Wisnoski NI, Leibold MA, Lennon JT (2019) Dormancy in metacommunities. \textit{American Naturalist} 194: 131--151. \href{https://lennonlab.github.io/assets/publications/Wisnoski_etal_2019.pdf}{(pdf)}}
+
+\pub{Salazar A, Lennon JT, Dukes JS (2019) Microbial activity improves predictability of soil respiration dynamics. \textit{Biogeochemistry} 144: 103--116. \href{https://lennonlab.github.io/assets/publications/Salazar_etal_2019.pdf}{(pdf)}}
+
+\pub{Muscarella ME, Boot CM, Broeckling CD, Lennon JT (2019) Resource diversity structures aquatic bacterial communities. \textit{ISMEJ} 13: 2183--2195. \href{https://lennonlab.github.io/assets/publications/Muscarella_etal_2019.pdf}{(pdf)}}
+
+\pub{Larsen ML, Wilhelm SW, Lennon JT (2019) Nutrient stoichiometry shapes microbial coevolution. \textit{Ecology Letters} 22: 1009--1018. \href{https://lennonlab.github.io/assets/publications/Larsen_etal_2019.pdf}{(pdf)}}
+
+\pub{Locey KJ, Lennon JT (2019) A residence-time framework for biodiversity. \textit{American Naturalist} 194: 59--72. \href{https://lennonlab.github.io/assets/publications/Locey_Lennon_2019.pdf}{(pdf)}}
+
+\pub{Sprunger CD, Culman SW, Peralta AP, DuPont ST, Lennon JT, Snapp SS (2019) Perennial grain crop roots and nitrogen management shape soil food webs and soil carbon dynamics. \textit{Soil Biology and Biochemistry} 137: 107573. \href{https://lennonlab.github.io/assets/publications/Sprunger_etal_2019.pdf}{(pdf)}}
+
+\pub{Shade A, Dunn RR, Blowes SA, Keil P, Bohannan BMJ, Hermann M, Küsel K, Lennon JT, Sanders NJ, Storch D, Chase J (2018) Macroecology to unite all biodiversity great and small. \textit{Trends in Ecology and Evolution} 33: 731--744. \href{https://lennonlab.github.io/assets/publications/Shade_etal_2018.pdf}{(pdf)}}
+
+\pub{Lennon JT, Muscarella ME, Placella SA, Lehmkuhl BK (2018) How, when, and where relic DNA biases estimates of microbial diversity. \textit{mBio} 9: e00637-18. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2018.pdf}{(pdf)}}
+
+\pub{Shoemaker WR, Lennon JT (2018) Evolution with a seed bank: the population genetic consequences of microbial dormancy. \textit{Evolutionary Applications} 11: 60–75. \href{https://lennonlab.github.io/assets/publications/Shoemaker_Lennon_2018.pdf}{(pdf)}}
+
+\pub{Hall EK, Bernhardt ES, Bier R, Bradford MA, Boot CM, Cotner JB, del Giorgio PA, Evans SE, Graham EB, Jones SE, Lennon JT, Nemergut D, Osborne B, Rocca JD, Schimel JS, Waldrop MS, Wallenstein MW (2018) Understanding how microbiomes influence the systems they inhabit. \textit{Nature Microbiology} 3: 977–982. \href{https://lennonlab.github.io/assets/publications/Hall_etal_2018.pdf}{(pdf)}}
+
+\pub{Peralta AL, Sun Y, McDaniel MD, Lennon JT (2018) Crop diversity increases disease suppressive capacity of soil microbiomes. \textit{Ecosphere} 9: e02235. \href{https://lennonlab.github.io/assets/publications/Peralta_etal_2018.pdf}{(pdf)}}
+
+\pub{Long H, Sung W, Kucukyildirim S, Williams E, Miller S, Guo W, Patterson C, Gregory C, Strauss C, Stone C, Berne C, Kysela D, Shoemaker WR, Muscarella M, Luo H, Lennon JT, Brun YV, Lynch M (2018) Evolutionary determinants of genome-wide nucleotide composition. \textit{Nature Ecology and Evolution} 2: 237--240. \href{https://lennonlab.github.io/assets/publications/Long_etal_2018.pdf}{(pdf)}}
+
+\pub{Schimmelmann A, Streil T, Fernandez-Cortes A, Cuezva S, Lennon JT (2018) Radiolysis via radioactivity is not responsible for rapid methane oxidation in subterranean air. \textit{PLOS ONE} 113: 020650. \href{https://lennonlab.github.io/assets/publications/Schimmelmann_etal_2018.pdf}{(pdf)}}
+
+\pub{Shoemaker WR, Locey KJ, Lennon JT (2017) A macroecological theory of microbial biodiversity. \textit{Nature Ecology and Evolution} 1: 0107. \href{https://lennonlab.github.io/assets/publications/Shoemaker_etal_2017.pdf}{(pdf)}}
+
+\pub{Kuo V, Shoemaker WR, Muscarella ME, Lennon JT (2017) Whole genome sequence of the soil bacterium \textit{Micrococcus} sp. KBS0714. \textit{Genome Announcements} 5: e00697-17. \href{https://lennonlab.github.io/assets/publications/Kuo_etal_2017.pdf}{(pdf)}}
+
+\pub{Nguyễn-Thuỳ D, Schimmelmann A, Nguyễn-Văn H, Drobniak A, Lennon JT, Tạ PH, Nguyễn NTA (2017) Subterranean microbial oxidation of atmospheric methane in cavernous tropical karst. \textit{Chemical Geology} 466: 229--238. \href{https://lennonlab.github.io/assets/publications/Nguyen-Thuy_etal_2017.pdf}{(pdf)}}
+
+\pub{Lamit LJ, Romanowicz JH, Potvin LR, Rivers A, Singh K, Lennon JT, Tringe S, Kane E, Lilleskov E (2017) Patterns and drivers of fungal community depth stratification in \textit{Sphagnum} peat. \textit{FEMS Microbiology Ecology} 93: fix082. \href{https://lennonlab.github.io/assets/publications/Lamit_etal_2017.pdf}{(pdf)}}
+
+\pub{Locey KJ, Fisk MC, Lennon JT (2017) Microscale insight into microbial seed banks. \textit{Frontiers in Microbiology} 7: 2040. \href{https://lennonlab.github.io/assets/publications/Locey_etal_2017.pdf}{(pdf)}}
+
+\pub{Webster KD, Lagarde LR, Sauer PE, Schimmelmann A, Lennon JT, Boston PJ (2017) Isotopic evidence for the migration of thermogenic methane in Cueva de Villa Luz cave, Tabasco, Mexico. \textit{Journal of Cave and Karst Studies} 79: 24–34. \href{https://lennonlab.github.io/assets/publications/Webster_etal_2017.pdf}{(pdf)}}
+
+\pub{Lennon JT, Locey KJ (2017) Macroecology for microbiology. \textit{Environmental Microbiology Reports} 9: 38–40. \href{https://lennonlab.github.io/assets/publications/Lennon_Locey_2017.pdf}{(pdf)}}
+
+\pub{LaSarre B, McCully AL, Lennon JT, McKinlay JB (2017) Microbial mutualism dynamics governed by dose-dependent toxicity and growth-independent production of a cross-fed nutrient. \textit{ISMEJ} 11: 337–348. \href{https://lennonlab.github.io/assets/publications/LaSarre_etal_2017.pdf}{(pdf)}}
+
+\pub{Lennon JT, Nguyễn Thùy D, Phạm \DJ{}ức N, Drobniak A, Tạ PH, Phạm N\DJ{}, Streil T, Webster KD, Schimmelmann A (2017) Microbial contributions to subterranean methane sinks. \textit{Geobiology} 15: 254--258. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2017.pdf}{(pdf)}}
+
+\pub{Skelton J, Geyer KM, Lennon JT, Creed RP, Brown BL (2017) Multi-scale ecological filters shape crayfish microbiome assembly. \textit{Symbiosis} 72: 159–170. \href{https://lennonlab.github.io/assets/publications/Skelton_etal_2017.pdf}{(pdf)}}
+
+\pub{Locey KJ, Lennon JT (2017) A modeling platform for the simultaneous emergence of ecological patterns. \textit{PeerJ Preprints} 5: e1469v3. \href{https://lennonlab.github.io/assets/publications/Locey_Lennon_2017.pdf}{(pdf)}}
+
+\pub{Locey KJ, Lennon JT (2016) Powerful predictions of biodiversity from ecological models and scaling laws. \textit{Proceedings of the National Academy of Sciences of the United States of America} 113: E5097. \href{https://lennonlab.github.io/assets/publications/Locey_Lennon_2016_Reply.pdf}{(pdf)}}
+
+\pub{Lennon JT, Locey KJ (2016) The underestimation of global microbial diversity. \textit{mBio} 7: e01298-16. \href{https://lennonlab.github.io/assets/publications/Lennon_Locey_2016_mBio.pdf}{(pdf)}}
+
+\pub{Locey KJ, Lennon JT (2016) Scaling laws predict global microbial diversity. \textit{Proceedings of the National Academy of Sciences of the United States of America} 113: 5970–5975. \href{https://lennonlab.github.io/assets/publications/Locey_Lennon_2016.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Locey_Lennon_2016_SI.pdf}{supplement}, \href{https://lennonlab.github.io/assets/publications/Pedros-Alio_Manrubia_2016.pdf}{commentary}, \href{https://f1000.com/prime/726327633}{F1000 recommendation)}}
+
+\pub{Lennon JT, Lehmkuhl BK (2016) A trait-based approach to biofilms in soil. \textit{Environmental Microbiology} 18: 2732–2742. \href{https://lennonlab.github.io/assets/publications/Lennon_Lehmkuhl_2016.pdf}{(pdf)}}
+
+\pub{Muscarella ME, Jones SE, Lennon JT (2016) Species sorting along a subsidy gradient alters community stability. \textit{Ecology} 97: 2034–2043. \href{https://lennonlab.github.io/assets/publications/Muscarella_etal_2016.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Muscarella_etal_Supplement_2016.pdf}{supplement)}}
+
+\pub{Aanderud ZT, Vert JC, Magnusson TW, Lennon JT, Breakwell DP, Harker AR (2016) Bacterial dormancy is more prevalent in freshwater than hypersaline lakes. \textit{Frontiers in Microbiology} 7: 853. \href{https://lennonlab.github.io/assets/publications/Aanderud_etal_2016.pdf}{(pdf)}}
+
+\pub{Lennon JT, Denef VJ (2016) Evolutionary ecology of microorganisms: from the tamed to the wild. In: Yates MV, Nakatsu C, Miller R, Pillai S (eds). \textit{Manual of Environmental Microbiology, 4th ed.} ASM Press, Washington, DC, pp. 4.1.2-1–4.1.2-12. \href{https://lennonlab.github.io/assets/publications/Lennon_Denef_2015.pdf}{(pdf)}}
+
+\pub{Wigington CH, Sonderegger DL, Brussard CPD, Buchan A, Finke JF, Fuhrman JA, Lennon JT, Middelboe M, Stock CA, Suttle CA, Wilson WH, Wommack EK, Wilhelm SW, Weitz JS (2016) Re-examining the relationship between virus and microbial cell abundances in the global oceans. \textit{Nature Microbiology} 1: 15024. \href{https://lennonlab.github.io/assets/publications/Wiggington_etal_2016.pdf}{(pdf)}}
+
+\pub{Hall EK, Schoolmaster DR, Amado AM, Stets EG, Lennon JT, Domine L, Cotner JB (2016) Scaling relationships among drivers of aquatic respiration: from the smallest to the largest freshwater ecosystems. \textit{Inland Waters} 6: 1–10. \href{https://lennonlab.github.io/assets/publications/Hall_etal_2016.pdf}{(pdf)}}
+
+\pub{Kinsman-Costello LE, Hamilton SK, O'Brien J, Lennon JT (2016) Phosphorus release from the drying and reflooding of diverse wetland sediments. \textit{Biogeochemistry} 130: 159–176. \href{https://lennonlab.github.io/assets/publications/Kinsman-Costello_etal_2016.pdf}{(pdf)}}
+
+\pub{Martiny JBH, Jones SE, Lennon JT, Martiny AC (2015) Microbiomes in light of traits: a phylogenetic perspective. \textit{Science} 350: aac9323. \href{https://lennonlab.github.io/assets/publications/Martiny_etal_2015.pdf}{(pdf)}}
+
+\pub{Bier RL, Bernhardt ES, Boot CM, Graham EB, Hall EK, Lennon JT, Nemergut D, Osborne BB, Ruiz-Gonzalez C, Schimel JP, Waldrop MP, Wallenstein MD (2015) Linking microbial community structure and microbial processes: an empirical and conceptual overview. \textit{FEMS Microbiology Ecology} 91: fiv113. \href{https://lennonlab.github.io/assets/publications/Bier_etal_2015.pdf}{(pdf)}}
+
+\pub{Shoemaker WR, Muscarella ME, Lennon JT (2015) Genome sequence of the soil bacterium \textit{Janthinobacterium} sp. KBS0711. \textit{Genome Announcements} 3: e00689-15. \href{https://lennonlab.github.io/assets/publications/Shoemaker_etal_2015.pdf}{(pdf)}}
+
+\pub{Treseder KK, Lennon JT (2015) Fungal traits that drive ecosystem dynamics. \textit{Microbiology and Molecular Biology Reviews} 79: 243–262. \href{https://lennonlab.github.io/assets/publications/Treseder_Lennon_2015.pdf}{(pdf)}}
+
+\pub{Solomon CT, Jones SE, Weidel BC, Buffam I, Fork ML, Karlsson J, Larsen S, Lennon JT, Read JS, Sadro S, Saros JE (2015) Ecosystem consequences of changing inputs of terrestrial dissolved organic matter to lakes: current knowledge and future challenges. \textit{Ecosystems} 18: 376–389. \href{https://lennonlab.github.io/assets/publications/Solomon_etal_2015.pdf}{(pdf)}}
+
+\pub{Weitz JS, Stock CA, Wilhelm SW, Bourouiba L, Buchan A, Coleman ML, Follows MJ, Fuhrman JA, Jover LF, Lennon JT, Middelboe M, Sonderegger DL, Suttle CA, Taylor BP, Thingstad TF, Wilson WH, Wommack EK (2015) A multitrophic model to quantify the effects of marine viruses on microbial food webs and ecosystem processes. \textit{The ISME Journal} 9: 1352–1364. \href{https://lennonlab.github.io/assets/publications/Weitz_etal_2015.pdf}{(pdf)}}
+
+\pub{Aanderud ZT, Jones SE, Fierer N, Lennon JT (2015) Resuscitation of the rare biosphere contributes to pulses of ecosystem activity. \textit{Frontiers in Microbiology} 6: 24. \href{https://lennonlab.github.io/assets/publications/Aanderud_etal_2015.pdf}{(pdf)}}
+
+\pub{Jones SE, Lennon JT (2015) A test of the subsidy-stability hypothesis: effects of terrestrial carbon in aquatic ecosystems. \textit{Ecology} 96: 1550–1560. \href{https://lennonlab.github.io/assets/publications/Jones_Lennon_2015.pdf}{(pdf}, \href{https://esapubs.org/archive/ecol/E096/138/}{supplement}, \\ \href{https://lennonlab.github.io/assets/publications/Jones_Lennon_2016_ESABulletin.pdf}{ESA Bulletin Photo Gallery)}}
+
+\pub{Rocca JD, Hall EK, Lennon JT, Evans SE, Waldrop MP, Cotner JB, Nemergut DR, Graham EB, Wallenstein MD (2015) Relationships between protein-encoding gene abundance and corresponding process are commonly assumed yet rarely observed. \textit{The ISME Journal} 9: 1693–1699. \href{https://lennonlab.github.io/assets/publications/Rocca_etal_2015.pdf}{(pdf)}}
+
+\pub{Muscarella ME, Bird KC, Larsen ML, Placella SA, Lennon JT (2014) Phosphorus resource heterogeneity in microbial food webs. \textit{Aquatic Microbial Ecology} 73: 259–272. \href{https://lennonlab.github.io/assets/publications/Muscarella_etal_2014.pdf}{(pdf)}}
+
+\pub{Peralta AL, Stuart D, Kent AD, Lennon JT (2014) A social-ecological framework for \\ "micromanaging" microbial services. \textit{Frontiers in Ecology and the Environment} 12: 524–531. \href{https://lennonlab.github.io/assets/publications/Peralta_etal_2014.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Peralta_etal_2014_Suppl.pdf}{supplement}, \href{https://lennonlab.github.io/assets/publications/Peralta_etal_2014_Cover.pdf}{cover)}}
+
+\pub{Krause S, Le Roux X, Niklaus PA, Van Bodegom P, Lennon JT, Bertilsson S, Grossart HP, Philippot L, Bodelier P (2014) Trait-based approaches for understanding microbial biodiversity and ecosystem functioning. \textit{Frontiers in Microbiology} 5: 251. \href{https://lennonlab.github.io/assets/publications/Krause_etal_2014.pdf}{(pdf)}}
+
+\pub{terHorst CP, Lennon JT, Lau JA (2014) The relative importance of rapid evolution for plant-soil feedbacks depend on ecological context. \textit{Proceedings of the Royal Society B} 281: 20140028. \href{https://lennonlab.github.io/assets/publications/terHorst_etal_2014.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/terHorst_etal_2014_correction.pdf}{correction)}}
+
+\pub{Dzialowski AR, Rzepecki M, Kostrzewska-Szlakowska I, Lennon JT, Kalinowska K, Palash A (2014) Are the abiotic and biotic characteristics of aquatic mesocosms representative of in situ conditions? \textit{Journal of Limnology} 73: 603–612. \href{https://lennonlab.github.io/assets/publications/Dzialowski_etal_2014.pdf}{(pdf)}}
+
+\pub{Bertilsson S, Burgin A, Carey CC, Fey SB, Grossart HP, Grubisic L, Jones I, Kirillin G, Lennon JT, Shade A, Smyth RL (2013) The under-ice microbiome of seasonally frozen lakes. \textit{Limnology and Oceanography} 58: 1998–2012. \href{https://lennonlab.github.io/assets/publications/Bertilsson_etal_2013.pdf}{(pdf)}}
+
+\pub{Lennon JT, Hamilton SK, Muscarella ME, Grandy AS, Wickings K, Jones SE (2013) A source of terrestrial organic carbon to investigate the browning of aquatic ecosystems. \textit{PLOS ONE} 8: e75771. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2013.pdf}{(pdf)}}
+
+\pub{Ponsero AJ, Chen F, Lennon JT, Wilhelm SW (2013) Complete genome sequence of a non-lysogenizing cyanobacterial siphoviridae. \textit{Genome Announcements} 1(4): e00472-13. \href{https://lennonlab.github.io/assets/publications/Ponsero_etal_2013.pdf}{(pdf)}}
+
+\pub{Lauber CL, Ramirez KS, Aanderud ZT, Lennon JT, Fierer N (2013) Temporal variability in soil microbial communities across land-use types. \textit{The ISME Journal} 7: 1641–1650. \href{https://lennonlab.github.io/assets/publications/Lauber_etal_2013.pdf}{(pdf)}}
+
+\pub{Aanderud ZT, Jones SE, Schoolmaster DR, Fierer N, Lennon JT (2013) Sensitivity of soil respiration and microbial communities to altered snowfall. \textit{Soil Biology and Biochemistry} 57: 217–227. \href{https://lennonlab.github.io/assets/publications/Aanderud_etal_2013.pdf}{(pdf)}}
+
+\pub{Shade A, Peter H, Allison S, Baho D, Berga M, Burgmann H, Huber D, Langenheder S, Lennon JT, Martiny JBH, Matulich K, Schmidt TM, Handelsman J (2012) Fundamentals of microbial community resistance and resilience. \textit{Frontiers in Microbiology} 3: 417. \href{https://lennonlab.github.io/assets/publications/Shade_etal_2012.pdf}{(pdf)}}
+
+\pub{Lau JA, Lennon JT (2012) Rapid responses of soil microorganisms improve plant fitness in novel environments. \textit{Proceedings of the National Academy of Sciences of the United States of America} 109: 14058–14062. \href{https://lennonlab.github.io/assets/publications/Lau_Lennon_2012.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Lau_Lennon_2012_Suppl.pdf}{supplement}, \href{https://www.sciencedaily.com/releases/2012/08/120814110957.htm}{press release}, \href{http://www.bacteriofiles.com/2012/09/bacteriofiles-micro-edition-103.html}{pod cast}, \\ \href{https://f1000.com/prime/717978110}{F1000 recommendation}, \href{https://www.pnas.org/doi/10.1073/pnas.2118690118}{correction)}}
+
+\pub{Lennon JT, Aanderud ZA, Lehmkuhl BK, Schoolmaster DR (2012) Mapping the niche space of soil microorganisms using taxonomy and traits. \textit{Ecology} 93: 1867–1879. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2012.pdf}{(pdf}, \\ \href{https://esapubs.org/archive/ecol/E093/165/}{supplement}, \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2012_ESABull.pdf}{ESA Bulletin Photo Gallery)}}
+
+\pub{Burgin AJ, Hamilton SK, Jones SE, Lennon JT (2012) Denitrification by sulfur-oxidizing bacteria in a eutrophic lake. \textit{Aquatic Microbial Ecology} 66: 283–293. \href{https://lennonlab.github.io/assets/publications/Burgin_etal_2012.pdf}{(pdf)}}
+
+\pub{O'Brien JM, Hamilton SK, Kinsman-Costello LE, Lennon JT, Ostrom NE (2012) Nitrogen transformations in a through-flow wetland revealed using whole-ecosystem pulsed 15N additions. \textit{Limnology and Oceanography} 57: 221–234. \href{https://lennonlab.github.io/assets/publications/OBrien_etal_2012.pdf}{(pdf)}}
+
+\pub{Treseder KK, Balser TC, Bradford MA, Brodie EL, Eviner VT, Hofmockel KS, Lennon JT, Levine UY, MacGregor BJ, Pett-Ridge J, Waldrop MP (2012) Integrating microbial ecology into ecosystem models. \textit{Biogeochemistry} 109: 7–18. \href{https://lennonlab.github.io/assets/publications/Treseder_etal_2012.pdf}{(pdf)}}
+
+\pub{Lau JA, Lennon JT (2011) Evolutionary ecology of plant-microbe interactions: soil microbial structure alters natural selection on plant traits. \textit{New Phytologist} 192: 215–224. \href{https://lennonlab.github.io/assets/publications/Lau_Lennon_2011.pdf}{(pdf)}}
+
+\pub{Aanderud ZT, Lennon JT (2011) Validation of heavy-water stable isotope probing for the characterization of rapidly responding soil bacteria. \textit{Applied and Environmental Microbiology} 77: 4589–4596. \href{https://lennonlab.github.io/assets/publications/Aanderud_Lennon_2011.pdf}{(pdf)}}
+
+\pub{Fierer N, Lennon JT (2011) The generation and maintenance of diversity in microbial communities. \textit{American Journal of Botany} 98: 439–448. \href{https://lennonlab.github.io/assets/publications/Fierer_Lennon_2011.pdf}{(pdf)}}
+
+\pub{Jones SE, Lennon JT (2010) Dormancy contributes to the maintenance of microbial diversity. \textit{Proceedings of the National Academy of Sciences of the United States of America} 107: 5881-5886. \href{https://lennonlab.github.io/assets/publications/Jones_Lennon_2010.pdf}{(pdf)}}
+
+\pub{Thum RA, Lennon JT (2010) Comparative ecological niche models predictive the invasive spread of variable-leaf milfoil (\textit{Myriophyllum heterophyllum}) and its potential impact on closely related native species. \textit{Biological Invasions} 12: 133–143. \href{https://lennonlab.github.io/assets/publications/Thum_Lennon_2010.pdf}{(pdf)}}
+
+\pub{Jones SE, Lennon JT (2009) Evidence for limited microbial transfer of methane in a planktonic food web. \textit{Aquatic Microbial Ecology} 58: 45–53. \href{https://lennonlab.github.io/assets/publications/Jones_Lennon_2009.pdf}{(pdf)}}
+
+\pub{Lennon JT, Martiny JBH (2008) Rapid evolution buffers ecosystem impacts of viruses in a microbial food web. \textit{Ecology Letters} 11: 1177–1188. \href{https://lennonlab.github.io/assets/publications/Lennon_Martiny_2008.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Lennon_Martiny_2008_Suppl.pdf}{supplement)}}
+
+\pub{Lennon JT, Cottingham KL (2008) Microbial productivity in variable resource environments. \textit{Ecology} 84: 1001–1014. \href{https://lennonlab.github.io/assets/publications/Lennon_Cottingham_2008.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Lennon_Cottingham_2008_Suppl.pdf}{supplement}, \href{https://lennonlab.github.io/assets/publications/Lennon_Cottingham_2008_ESABull.pdf}{ESA Bulletin Photo Gallery)}}
+
+\pub{Lennon JT, Khatana SAM, Marston MF, Martiny JBH (2007) Is there a cost of virus resistance in marine cyanobacteria? \textit{The ISME Journal} 1: 300–312. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2007.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2007_ISMECov.jpg}{featured article)}}
+
+\pub{Lennon JT (2007) Diversity and metabolism of marine bacteria cultivated on dissolved DNA. \textit{Applied and Environmental Microbiology} 73: 2799–2805. \href{https://lennonlab.github.io/assets/publications/Lennon_2007.pdf}{(pdf)}}
+
+\pub{Reyns NB, Langenheder S, Lennon J (2007) Specialization vs. diversification: a trade-off for young scientists? \textit{Eos} 88: 343. \href{https://lennonlab.github.io/assets/publications/Reyns_etal_2007.pdf}{(pdf)}}
+
+\pub{Dzialowski AD, Lennon JT, Smith VH (2007) Food web structure provides biotic resistance against plankton invasion attempts. \textit{Biological Invasions} 9: 257–256. \href{https://lennonlab.github.io/assets/publications/Dzialowski_etal_2007.pdf}{(pdf)}}
+
+\pub{Lennon JT, Faiia AM, Feng X, Cottingham KL (2006) Relative importance of CO\textsubscript{2} recycling and CH\textsubscript{4} pathways in lake food webs along a terrestrial carbon gradient. \textit{Limnology and Oceanography} 51: 1602–1613. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2006.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2006_Suppl.pdf}{supplement)}}
+
+\pub{Thum RA, Lennon JT (2006) Is hybridization responsible for invasive growth of non-indigenous water-milfoils? \textit{Biological Invasions} 84: 1061–1066. \href{https://lennonlab.github.io/assets/publications/Thum_Lennon_2006.pdf}{(pdf)}}
+
+\pub{Cottingham KL, Lennon JT, Brown BL (2005) Regression versus ANOVA. \textit{Frontiers in Ecology and the Environment} 3: 358. \href{https://lennonlab.github.io/assets/publications/Cottingham_etal_2005b.pdf}{(pdf)}}
+
+\pub{Cottingham KL, Lennon JT, Brown BL (2005) Knowing when to draw the line: designing more informative ecological experiments. \textit{Frontiers in Ecology and the Environment} 3: 145–152. \href{https://lennonlab.github.io/assets/publications/Cottingham_etal_2005a.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Cottingham_etal_2005a_Suppl.pdf}{supplement)}}
+
+\pub{Lennon JT, Pfaff LE (2005) Source and supply of terrestrial carbon affects aquatic microbial metabolism. \textit{Aquatic Microbial Ecology} 39: 107–119. \href{https://lennonlab.github.io/assets/publications/Lennon_Pfaff_2005.pdf}{(pdf)}}
+
+\pub{Thum RA, Lennon JT, Connor J, Smagula AP (2005) A DNA fingerprinting approach for distinguishing native and non-native milfoils. \textit{Lake and Reservoir Management} 21: 1–6. \href{https://lennonlab.github.io/assets/publications/Thum_etal_2005.pdf}{(pdf)}}
+
+\pub{Lennon JT (2004) Experimental evidence that terrestrial carbon subsidies increase CO\textsubscript{2} flux from lake ecosystems. \textit{Oecologia} 138: 584–591. \href{https://lennonlab.github.io/assets/publications/Lennon_2004.pdf}{(pdf)}}
+
+\pub{Lennon JT, Smith VH, Dzialowski AR (2003) Invasibility of plankton food webs along a trophic state gradient. \textit{Oikos} 102: 191–203. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2003.pdf}{(pdf)}}
+
+\pub{Dzialowski AR, Lennon JT, O'Brien WJ, Smith VH (2003) Predator-induced phenotypic plasticity in the exotic cladoceran \textit{Daphnia lumholtzi}. \textit{Freshwater Biology} 48: 1593–1602. \href{https://lennonlab.github.io/assets/publications/Dzialowski_etal_2003.pdf}{(pdf}, \href{https://lennonlab.github.io/assets/publications/Dzialowski_etal_2003_Cover.pdf}{cover)}}
+
+\pub{Cottingham KL, Brown BL, Lennon JT (2001) Biodiversity may regulate the temporal variability of ecological systems. \textit{Ecology Letters} 4: 72–85. \href{https://lennonlab.github.io/assets/publications/Cottingham_etal_2001.pdf}{(pdf)}}
+
+\pub{Lennon JT, Smith VH, Williams K (2001) Influence of temperature on exotic \textit{Daphnia lumholtzi} and implications for invasion success. \textit{Journal of Plankton Research} 23: 425–434. \href{https://lennonlab.github.io/assets/publications/Lennon_etal_2001.pdf}{(pdf)}}
+
+\pub{deNoyelles FJ, Wang SH, Meyer JO, Huggins DG, Lennon JT, Kolln WS, Randtke SJ (1999) Water quality issues in reservoirs: some considerations from a study of a large reservoir in Kansas. \textit{Proceedings of the 49th Annual Environmental Engineering Conference, University of Kansas, Lawrence}. \href{https://lennonlab.github.io/assets/publications/deNoyelles_etal_1999.pdf}{(pdf)}}
+
+\end{document}
